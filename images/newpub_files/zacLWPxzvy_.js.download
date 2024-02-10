@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisDirectInboxQPInterstitialQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:"7495362107146916",metadata:{},name:"PolarisDirectInboxQPInterstitialQuery",operationKind:"query",text:null}};e.exports=a}),null);
+__d("IGDInboxTrayQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:"7155623337846636",metadata:{},name:"IGDInboxTrayQuery",operationKind:"query",text:null}};e.exports=a}),null);
+__d("PolarisDirectInboxRoot.entrypoint",["IGDInboxTrayQuery$Parameters","JSResourceForInteraction","PolarisDirectInboxQPInterstitialQuery$Parameters","gkx"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{queries:babelHelpers["extends"]({qpInterstitialQueryRef:{parameters:c("PolarisDirectInboxQPInterstitialQuery$Parameters"),variables:{}}},c("gkx")("9549")?{inboxTrayItemsQueryRef:{parameters:c("IGDInboxTrayQuery$Parameters"),variables:{}}}:void 0)}},root:c("JSResourceForInteraction")("PolarisDirectInboxRoot.react").__setRef("PolarisDirectInboxRoot.entrypoint")};g["default"]=a}),98);
