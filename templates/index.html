@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Society Of Technical Education</title>
+    <link rel="stylesheet" href="sylo.css">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static',filename='css/sylo.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header" style="background-image: linear-gradient(rgba(4,9,30,.8),rgba(3, 25, 110, 0.8)),url('https://cdn.iste.org/www-root/ISTE%20Cert%20District%20Page-main%20image_v1.png?_ga=2.195644207.2025600090.1669050094-216113687.1667852725');">
+        <nav>
+            <a href="{{url_for('static',filename='otherhtml/iste.html')}}"><img src="{{url_for('static',filename='istelogo.png')}}"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="bi bi-x" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="{{url_for('static',filename='otherhtml/iste.html')}}">Home</a></li>
+                        <li><a href="{{url_for('static',filename='otherhtml/About.html')}}">About</a></li>
+                        <li><a href="{{url_for('static',filename='otherhtml/events.html')}}">Events</a></li>
+                        <li><a href="{{url_for('static',filename='otherhtml/Publications.html')}}">Blog</a></li>
+                        <li><a href="{{url_for('static',filename='otherhtml/Contact.html')}}">Contact</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                        <!-- <li id="cool">ISTE SECTION
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""> How To Establish ISTE Chapter</a></li>
+                                    <li><a href="">Incentives To ISTE Chapter</a></li>
+                                    <li><a href="">ISTE Newsletters</a></li>
+                                    <li><a href="">Management Of ISTE</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+                    </ul>
+            </div>
+            <i class="bi bi-menu-button-wide" onclick="showmenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>A Hub For Technical Education And Innovation</h1>
+    <p>The chapter aims to promote the cause of education and research in engineering and allied fields, and to foster collaboration and exchange of ideas among its members. The chapter conducts various activities for the benefit of staff members and students of the college, such as short term courses, webinars, workshops, seminars, conferences, competitions, etc. The chapter also organizes social and cultural events for the family members of the staff and students, such as tours, get-togethers, games, etc.</p>
+    <a href="https://pesce.ac.in/professional-bodies.php" class="herko">Visit Us To Know More</a>
+</div>
+    </section>
+<!-- Event conducted by iste -->
+<section class="events">
+    <h1>Events Conducted by ISTE PESCE: A Showcase of Technical Education and Innovation</h1>
+    <p>Some of the events conducted by ISTE PESCE and has also received several awards and recognitions </p>
+    <div class="row">
+        <div class="event-col">
+            <h3>Artificial Intelligence</h3>
+            <p>A webinar on “Artificial Intelligence and Machine Learning” by Dr. R. M. Mahalinge Gowda, Associate Dean for Academic Affairs at Binghamton University, USA</p>
+        </div>
+        <div class="event-col">
+            <h3>Python Programming</h3>
+            <p>A workshop on “Python Programming” by Mr. Manikanth Amaresh, Assistant Central Intelligence Officer, Ministry of Home Affairs, Government of India</p>
+        </div>
+        <div class="event-col">
+            <h3>Eureka 2020</h3>
+            <p>A national level technical symposium “Eureka 2020” with various competitions, guest lectures, and project exhibitions</p>
+        </div>
+    </div>
+</section>
+
+<!--Iste student awards -->
+
+<section class="awards">
+    <h1>ISTE Student Awards</h1>
+    <p>The ISTE student awards are given to recognize the achievements and innovations of students in various fields of engineering and technology</p>
+    <div class="row">
+        <div class="iste-col">
+            <div class="layers">
+                <h3>Rajyothsava Prasasthi</h3>
+            </div>
+            <!-- <img src="images/rajyotsva award.jpg"> -->
+            <img src="https://www.india.com/wp-content/uploads/2023/11/Karnataka-Rajyotsava-2023_-Recipients-Of-The-Rajyotsava-Prashasti-Award-Full-List.png">
+        </div>
+        <div class="iste-col">
+            <div class="layers">
+                <h3>Best Teacher Award</h3>
+            </div>
+            <img src="https://bgsnps.edu.in/wp-content/uploads/2019/12/Best-Science-Teacher-Award.jpg">
+        </div>
+        <div class="iste-col">
+            <div class="layers">
+                <h3>III Prize in Hackmania</h3>
+            </div>
+            <img src="https://en.uit.edu.vn/sites/vi/files/uploads/images/201906/doi_stateofart_dat_giai_ba.jpg">
+        </div>
+        
+        
+    </div>
+</section>
+
+<!-- iste publication -->
+<section class="publication">
+    <h1>Our Publications</h1>
+    <p>The ISTE encourages its faculty and students to contribute to the ISTE Publication by submitting their original and high-quality papers on various aspects of engineering and technology</p>
+    <div class="row">
+        <div class="pub-col">
+            <img src="https://nitc.ac.in/imgserver/uploads/compressed/pcm__4cd8889f-1a26-4f4c-82ad-aac6f66bb62d_0.png">
+            <h3>technical education</h3>
+            <p>You can find more details about the ISTE Publication and the ISTE PESCE Chapter on their official website here or on their social media pages here and here. 😊</p>
+        </div>
+        <div class="pub-col">
+            <img src="https://th.bing.com/th/id/OIP.mOXXG2vprxtSW19ZzCYWVQHaE8?rs=1&pid=ImgDetMain">
+            <h3>Smart Irrigation System</h3>
+            <p>“Design and Implementation of a Smart Irrigation System Using IoT and Machine Learning” by Manikanth Amaresh, Assistant Central Intelligence Officer, Ministry of Home Affairs, Government of India</p>
+        </div>
+        <div class="pub-col">
+            <img src="https://th.bing.com/th/id/OIP.RTJ1myfJYUHUcMOBuX_UkAHaEL?rs=1&pid=ImgDetMain">
+            <h3>Image Encryption</h3>
+            <p>A Novel Approach for Image Encryption Using Chaotic Maps and DNA Computing” by Dr. Girish R, Professor and Placement Officer, Computer Science and Engineering</p>
+        </div>
+    </div>
+</section>
+
+<!-- former Presidents of iste -->
+<section class="president">
+    <h1>What Faculty Of ISTE PESCE Mandya Say</h1>
+    <p>They are engaged in various activities and programs to advance the cause of technical education and research.They also contribute to the ISTE Publication, a quarterly journal that disseminates the latest developments and findings in various fields of engineering and technology</p>
+    <div class="row">
+        <div class="pres-col">
+            <img src="https://th.bing.com/th?id=OIP.m-lfrYnglZc9hj5eCz3HkwHaId&w=233&h=267&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+            <div>
+                <p>Principal and Professor, Department of Electronics and Communication Engineering i will love it</p>
+                <h3>Dr Nayak Sir</h3>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+        <div class="pres-col">
+            <img src="https://imgk.timesnownews.com/story/1567671113-dr_radhakrishnan.png">
+            <div>
+                <p>Professor and Head, Department of Computer Science and Engineering well its cool</p>
+                <h3>Dr RadhaKrisna</h3>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /* calltoaction */ -->
+<section class="cta" style="background-image: linear-gradient(rgba(4,9,30,.7),rgba(6, 25, 100, 0.7)),url('https://th.bing.com/th/id/OIP.D3fugB-BhpPm9agGufTx_gHaEK?w=284&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');">
+    <h1>Join ISTE Today: The Hub of Tech-Empowered Learning for 40+ Years</h1>
+    <a href="{{url_for('static',filename='otherhtml/Contact.html')}}" class="herko">Contact Us</a>
+</section>
+
+<!-- footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The International Society for Technology in Education (ISTE) is a nonprofit organization that works with the global education community to accelerate the use of technology to solve tough problems and inspire innovation. ISTE’s vision is that all students engage in transformative learning experiences that spark their imagination and prepare them to thrive in learning and life. ISTE offers professional learning, standards, events, publications, and membership for educators, leaders, and edtech providers</p>
+    <div class="icons">
+        
+        <a href="https://www.facebook.com/pesceiste/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/pesce.iste/?hl=en"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/iste-pesce-910066266/?originalSubdomain=in"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/pesce_iste"><i class="bi bi-twitter"></i></a>
+
+    </div>
+</section>
+
+
+
+    <!-- java script for toggle menu -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+ 
+</script>
+</body>
+</html>

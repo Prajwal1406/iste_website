@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Society Of Technical Education</title>
+    <link rel="stylesheet" href="sylo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Iste.html"><img src="images/isteoriginallogo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="bi bi-x" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="Iste.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="Publications.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+            </div>
+            <i class="bi bi-menu-button-wide" onclick="showmenu()"></i>
+        </nav>
+    <h1>Contact Us</h1>
+</section>
+    <!-- Contact us content -->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7789.9650536008585!2d76.87049259357909!3d12.517316399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafa0fa2477e217%3A0x7f46df666eecd99!2sPES%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1707577835364!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="cont-us">
+    <div class="row">
+        <div class="cont-col">
+            <div>
+            <i class="bi bi-house"></i>
+
+            <span>
+                <h5>PES College of Engineering</h5>
+            <p>K V Shankaragowda Rd, PES College Campus, Mandya, Karnataka 571401
+                </p></span>
+
+            </div>
+            <div>
+            <i class="bi bi-envelope-at"></i>
+        
+            <span>
+                <h5>placement@pesce.ac.in</h5>
+                <p>Email Your Query
+                    </p>
+            </span>
+
+            </div>
+            <div>
+                <i class="bi bi-telephone"></i>
+            
+            <span>
+                <h5>08232220043</h5>
+                <p>Mondat to Saturday, 7:30am - 5:30pm
+                    </p>
+            </span>
+    
+        </div>
+        </div>
+        <div class="cont-col">
+            <form action="https://formspree.io/f/xkndjdyk" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message"></textarea>
+                <button type="submit" class="herko red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The International Society for Technology in Education (ISTE) is a nonprofit organization that works with the global education community to accelerate the use of technology to solve tough problems and inspire innovation. ISTE’s vision is that all students engage in transformative learning experiences that spark their imagination and prepare them to thrive in learning and life. ISTE offers professional learning, standards, events, publications, and membership for educators, leaders, and edtech providers</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/pesceiste/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/pesce.iste/?hl=en"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/iste-pesce-910066266/?originalSubdomain=in"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/pesce_iste"><i class="bi bi-twitter"></i></a>
+    </div>
+</section>
+
+
+    <!-- java script for toggle menu -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
